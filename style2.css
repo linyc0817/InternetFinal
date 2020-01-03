@@ -1,0 +1,95 @@
+nav {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    height: 15px;
+    border-right:1px white solid;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    line-height: 6px;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+header { 
+    position: fixed;
+    /*height: 50px;*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+/* Self intro */
+.self {
+    margin-top: 100px;
+    display: flex;
+    position: absolute;
+    margin-top: 22%;
+}
+
+.member {
+    margin: 30px;
+    text-align: center;
+}
+
+.self  img {
+    border-radius: 50%;
+}
+
+/* Word Style */
+.article {
+    margin-top: 6%;
+    margin-left: 20px;
+}
+
+h1 {
+    color: blue;
+    font-size: 3em;
+}
+
+
+
+/* animation in http */
+.httpani {
+    background-color: black;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 75%;
+    top: 20%;
+}
+
+.version li {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.code {
+    display: table;
+    margin-left: -100px;
+    margin-right: 100px;
+}
+
+/* footer */
+footer {
+    /* position: fixed; */
+    float: left;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    font-size: 15px;
+}
