@@ -14,5 +14,37 @@
                 </ul>
             </nav>
         </header>
+        <div class="article">
+            <div style="float: left; margin-top: 3%; margin-bottom: 10px;"><h1>HTTPS (HyperText Transfer Protocol Secure)</h1></div>
+            <div style="float: left; width: 100%;"><h2>HTTP 安全缺陷</h2></div>
+            <div style="float: left; width: 90%; font-size: 18px; line-height: 150%;">
+                用來表示用戶端請求(request)的執行狀況，第一碼數字分別有以下意義：
+                    <ul>
+                        <li>在HTTP協議裏，Web端與Server端進行通訊是使用"明文"的方式，因為HTTP協議本身並不具備加密的功能，所以無法對請求端以及響應端的內容進行加密</li>
+                        <li>就算今天Web端可以對內容加密，再傳送到Server端解密，但這樣的機制因為並沒有CA以及公鑰基礎建設的基礎，也沒有透過SSL/TLS來做加密的動作，仍然會有被解密的風險</li>
+                        <li>HTTP協議不管是web端還是server端都不會對雙方的身份來進行驗證(例如server端收到請求時，只會要求訊息正確，卻不會去驗證這是不是真的是對應到的web端發出來的，而且server只會對請求做出一次響應)，也無法驗證內文的完整性，所以內容很有可能被竊聽或是竄改(也就是你可能不是跟你所想的對象交談</li>
+                        <li> 風險
+                            <ul>
+                                <li>竊聽風險（eavesdropping）：第三方可以獲知通信內容。</li>
+                                <li>篡改風險（tampering） ：第三方可以修改通信內容。</li>
+                                <li>冒充風險（pretending）：第三方可以冒充他人身份參與通信。</li>
+                            </ul>
+                        </li>
+                        <li>Server端因為對request幾乎是有求必應，所以也無法阻止海量Request的DDoS攻擊</li>
+                    </ul>
+            </div>
+            <div style="float: left; width: 100%;"><h2>簡介</h2></div>
+            <div style="float: left; width: 90%; font-size: 18px; line-height: 150%;">
+                HTTPS連接經常用於全球資訊網上的交易支付和企業訊息系統中敏感訊息的傳輸，確保各類型的網頁真實，保護帳戶和保持用戶通信，身分和網路瀏覽的私密性<br>
+                經由HTTP進行通訊，但利用SSL/TLS來加密封包。HTTPS的主要作用是在不安全的網路上建立一個安全信道，並可在使用適當的加密套件和伺服器憑證可被驗證且可被信任時，對竊聽和中間人攻擊提供合理的防護。<br>
+                用對稱加密來加密網頁，用非對稱加密來保護對稱加密的金鑰，這樣互補了兩個演算法的缺點。那麼如何保證非對稱加密的公鑰不被篡改呢？ 只要將公鑰放在數位證書中，只要證書是可信的，公鑰就是可信的。<br>
+                因此，SSL/TLS協議的基本過程是這樣的：<br>
+                1. 客戶端向伺服器端要求並驗證非對稱加密算法的公鑰。<br>
+                2. 雙方協商生成對稱加密算法的 “對話密鑰”。<br>
+                3. 雙方採用對稱加密算法和它的 “對話密鑰” 進行加密通信。<br>
+                4. 上面過程的前兩步，又稱為 “握手階段” (handshake)<br>
+            </div>
+        </div>
+
     </body>
 </html>
