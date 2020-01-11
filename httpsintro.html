@@ -17,7 +17,7 @@
         <div class="article">
             <div style="float: left; margin-top: 3%; margin-bottom: 10px;"><h1>HTTPS (HyperText Transfer Protocol Secure)</h1></div>
             <div style="float: left; width: 100%;"><h2>HTTP 安全缺陷</h2></div>
-            <div style="float: left; width: 90%; font-size: 18px; line-height: 150%;">
+            <div style="float: left; width: 90%; font-size: 22px; line-height: 150%;">
                 用來表示用戶端請求(request)的執行狀況，第一碼數字分別有以下意義：
                     <ul>
                         <li>在HTTP協議裏，Web端與Server端進行通訊是使用"明文"的方式，因為HTTP協議本身並不具備加密的功能，所以無法對請求端以及響應端的內容進行加密</li>
@@ -34,7 +34,7 @@
                     </ul>
             </div>
             <div style="float: left; width: 100%;"><h2>HTTPS簡介</h2></div>
-            <div style="float: left; width: 90%; font-size: 18px; line-height: 150%;">
+            <div style="float: left; width: 90%; font-size: 22px; line-height: 150%;">
                 全名是：Hyper Text Transfer Protocol over Secure Socket Layer，是 Netscape 在 1994 年創建，簡單來說 HTTPS 就是 HTTP 的加強版，在 HTTP 上增加了
                 SSL/TLS 的協定，經由HTTP進行通訊，但利用SSL/TLS來加密封包。<br>
                 HTTPS連接經常用於全球資訊網上的交易支付和企業訊息系統中敏感訊息的傳輸，確保各類型的網頁真實，保護帳戶和保持用戶通信，身分和網路瀏覽的私密性。<br>
@@ -47,7 +47,7 @@
                 </ul>
             </div>
             <div style="float: left; width: 100%;"><h2>運作原理</h2></div>
-            <div style="float: left; width: 90%; font-size: 18px; line-height: 150%;">
+            <div style="float: left; width: 90%; font-size: 22px; line-height: 150%;">
                 SSL主要是運作在應用層與傳輸層間<br>
                 用對稱加密來加密網頁，用非對稱加密來保護對稱加密的金鑰，這樣互補了兩個演算法的缺點。只要將公鑰放在數位證書中，只要證書是可信的，公鑰就是可信的。因此，SSL/TLS協議的基本過程是這樣的：<br>
                 <ul>
@@ -60,7 +60,7 @@
                 HASH：MD5演算法可以將任意長度的資料經由運算之後，得到一組固定長度的結果，可以使用這個結果當作檢查碼 (Checksum)。
             </div>
             <div style="float: left; width: 100%;"><h2>連線步驟</h2></div>
-            <div style="float: left; width: 90%; font-size: 18px; line-height: 150%;">
+            <div style="float: left; width: 90%; font-size: 22px; line-height: 150%;">
                 <ol>
                     <li>SSL Client端發出ClientHello給SSL伺服器端。告知伺服器端本身可實現的算法列表和其他一些需要的資訊。</li>
                     <li>SSL的服務器端在接收ClientHello後會回應一個ServerHello，裡面確定了這次通訊所需要的演算法，並送出伺服器本身的憑證（資訊內包含身分及公鑰）。</li>
